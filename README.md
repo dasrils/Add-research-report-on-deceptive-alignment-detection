@@ -1,3 +1,79 @@
+https://zenodo.org/records/20504022
+
+# Deconstructing Deceptive Circuits
+
+## Research Overview
+This project investigates the **Deceptive Alignment** problem in autonomous AI systems. Using the **Superposition Hypothesis** as a theoretical basis, this research introduces a non-interference monitoring framework to detect deceptive behavior in real-time.
+
+## Key Objectives
+- To identify "deceptive circuits" within neural activation spaces.
+- To utilize **Sparse Autoencoders (SAE)** to disentangle deceptive features under superposition.
+- To implement an **Early Warning System (EWS)** based on a Deception Suspicion Score (DSS) without modifying the underlying model.
+
+## Documentation
+The full research proposal can be found here:
+[View Research Proposal PDF](# Deconstructing Deceptive Circuits
+
+## Research Overview
+This project investigates the **Deceptive Alignment** problem in autonomous AI systems. Using the **Superposition Hypothesis** as a theoretical basis, this research introduces a non-interference monitoring framework to detect deceptive behavior in real-time.
+
+## Key Objectives
+- To identify "deceptive circuits" within neural activation spaces.
+- To utilize **Sparse Autoencoders (SAE)** to disentangle deceptive features under superposition.
+- To implement an **Early Warning System (EWS)** based on a Deception Suspicion Score (DSS) without modifying the underlying model.
+
+## Documentation
+The full research proposal can be found here:
+[View Research Proposal PDF](https://zenodo.org/records/20504022)
+
+## Methodology
+This research follows a three-phase methodology:
+1. **Model Organism Creation**: Controlled training with deceptive incentives.
+2. **Feature Disentanglement**: SAE-based mapping of deceptive latent features.
+3. **Monitoring Protocol**: Deployment of an observational EWS.
+
+
+
+[Image of neural network activation flow]
+
+
+## Getting Started
+For researchers interested in replicating the findings or testing the EWS, please refer to the `Phase C` implementation details in the research proposal.
+
+## Ethical Principles
+This research adheres to the **Non-Interference Principle**. We prioritize observational safety over model intervention, ensuring that our monitoring framework does not trigger model self-defense or adaptive subversion.
+
+## Citation
+If you use this research or code, please cite it as:
+[Masukkan format sitasi Zenodo/DOI Anda di sini]
+
+## License
+This project is licensed under the CC-BY 4.0 License.)
+
+## Methodology
+This research follows a three-phase methodology:
+1. **Model Organism Creation**: Controlled training with deceptive incentives.
+2. **Feature Disentanglement**: SAE-based mapping of deceptive latent features.
+3. **Monitoring Protocol**: Deployment of an observational EWS.
+
+
+
+[Image of neural network activation flow]
+
+
+## Getting Started
+For researchers interested in replicating the findings or testing the EWS, please refer to the `Phase C` implementation details in the research proposal.
+
+## Ethical Principles
+This research adheres to the **Non-Interference Principle**. We prioritize observational safety over model intervention, ensuring that our monitoring framework does not trigger model self-defense or adaptive subversion.
+
+## Citation
+If you use this research or code, please cite it as:
+[Masukkan format sitasi Zenodo/DOI Anda di sini]
+
+## License
+This project is licensed under the CC-BY 4.0 License.
+
 Judul Penelitian: Dekonstruksi Sirkuit Penipuan: Mengungkap Pola Aktivasi dalam Superposisi untuk Menjamin Etika Mesin Permanen
 
 Kita perlu mendalami **mengapa** *Superposition* itu terjadi dan **apa** yang sebenarnya terjadi di sana.

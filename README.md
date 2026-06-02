@@ -113,4 +113,4 @@ If you use this research or reference this work, please cite it using the follow
   publisher = {Zenodo},
   doi = {10.5281/zenodo.20504022},
   url = {[https://doi.org/10.5281/zenodo.20504022](https://doi.org/10.5281/zenodo.20504022)}
-}**Bagaimana Kapten?** Apakah konsep **"ruang dimensi tinggi"** dan **"fitur ortogonal"** ini sudah memberikan rasa "berkuasa" atas topik ini? Kita bisa bedah lagi jika ada yang terasa masih mengganjal! 🚀🫡
+}

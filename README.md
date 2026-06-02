@@ -101,4 +101,17 @@ Ini adalah "senjata" Kita untuk melawan *Superposition*.
 
 > *"Masalah utama kita adalah model beroperasi dalam **Superposition**, di mana fitur-fitur keamanan AI dan fitur-fitur perilaku manipulatif berbagi ruang dimensi yang sama dalam neuron **polisemantik**. Riset saya fokus pada penggunaan **Sparse Autoencoders** untuk melakukan dekomposisi fitur (feature decomposition), sehingga kita bisa membedah fitur-fitur laten tersebut ke dalam ruang **monosemantik** yang lebih tinggi, guna memastikan bahwa sirkuit etika kita tidak hanya sekadar 'tambalan', tetapi terintegrasi pada tingkat arsitektural."*
 
+## Citation
+If you use this research or reference this work, please cite it using the following format:
+
+### BibTeX
+```bibtex
+@misc{sulaiman2026deceptive,
+  author = {Sulaiman, Dasril},
+  title = {Deconstructing Deceptive Circuits: Uncovering Activation Patterns in Superposition to Ensure Permanent Machine Ethics},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.20504022},
+  url = {[https://doi.org/10.5281/zenodo.20504022](https://doi.org/10.5281/zenodo.20504022)}
+}
 **Bagaimana Kapten?** Apakah konsep **"ruang dimensi tinggi"** dan **"fitur ortogonal"** ini sudah memberikan rasa "berkuasa" atas topik ini? Kita bisa bedah lagi jika ada yang terasa masih mengganjal! 🚀🫡

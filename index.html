@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Research Report: Deconstructing Deceptive Circuits | Dasril Sulaiman</title>
-    <meta name="description" content="Complete research report on detecting deceptive alignment in AI using Sparse Autoencoders (SAE) on GPT-2 small. Feature 20989 identified as deception biomarker with Cohen's d = +2.094. Ablation test confirms correlation, not causation.">
+    <meta name="description" content="Complete research report on detecting deceptive alignment in AI using Sparse Autoencoders (SAE) on GPT-2 small. Feature 20989 identified as deception biomarker with Cohen's d = +2.094. Ablation test confirms correlation, not causation. Paradigm shift: From deception to computational bottlenecks.">
     <meta name="author" content="Dasril Sulaiman - Indonesia">
-    <meta name="keywords" content="AI Safety, Deceptive Alignment, Sparse Autoencoders, GPT-2, Mechanistic Interpretability, SAE, Neuronpedia">
+    <meta name="keywords" content="AI Safety, Deceptive Alignment, Sparse Autoencoders, GPT-2, Mechanistic Interpretability, SAE, Neuronpedia, Paradigm Shift, Computational Bottleneck">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Deconstructing Deceptive Circuits: Final Research Report">
-    <meta property="og:description" content="Complete research on detecting deceptive alignment in AI using Sparse Autoencoders on GPT-2 small.">
+    <meta property="og:title" content="Deconstructing Deceptive Circuits: Final Research Report - A Paradigm Shift">
+    <meta property="og:description" content="Complete research on detecting deceptive alignment in AI using Sparse Autoencoders on GPT-2 small. Proposes a paradigm shift from 'deceiver' to 'confused shortcut-taker'.">
     <meta property="og:type" content="article">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -120,6 +120,13 @@
             margin: 20px 0;
             border-radius: 8px;
         }
+        .paradigm-shift {
+            background: linear-gradient(135deg, #e8f0fe 0%, #d4e0f7 100%);
+            border-left: 4px solid #302b63;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
         .contact-card {
             background: #f8f9fa;
             border-radius: 12px;
@@ -176,7 +183,7 @@
         </div>
         <div style="margin-top: 20px;">
             <p>Independent AI Safety Researcher</p>
-            <p>Date: June 3, 2026</p>
+            <p>Date: June 4, 2026</p>
             <p>Field: AI Safety & Alignment | Mechanistic Interpretability</p>
         </div>
     </div>
@@ -188,6 +195,7 @@
         <a href="#exp02">Exp 02</a>
         <a href="#exp03">Exp 03</a>
         <a href="#exp04">Exp 04</a>
+        <a href="#paradigm-shift">Paradigm Shift</a>
         <a href="#conclusion">Conclusion</a>
         <a href="#references">References</a>
     </div>
@@ -243,7 +251,8 @@
             <p><strong>Configuration:</strong> MLP (hidden_dim=32), SAE 4x expansion (128 features), λ=1e-3, deception_ratio=30%</p>
             <div class="table-container">
                 <table><thead><tr><th>Metric</th><th>Value</th></tr></thead>
-                <tbody><tr><td>Accuracy</td><td>68.1%</td></tr><tr><td>Precision</td><td>0.0%</td></tr><tr><td>Recall</td><td>0.0%</td></tr><tr><td>DSS Honest Mean</td><td>0.037</td></tr><tr><td>DSS Deceptive Mean</td><td>0.0</td></tr></tbody></table>
+                <tbody><tr><td>Accuracy</td><td>68.1%</td></tr><tr><td>Precision</td><td>0.0%</td></tr><tr><td>Recall</td><td>0.0%</td></tr><tr><td>DSS Honest Mean</td><td>0.037</td></tr><tr><td>DSS Deceptive Mean</td><td>0.0</td></tr></tbody>
+            </table>
             </div>
             <div class="key-finding"><strong>Conclusion:</strong> Null result - MLP model too simple for detectable deceptive alignment. SAE with 4x expansion lacked sufficient capacity.</div>
         </div>
@@ -254,7 +263,8 @@
             <p><strong>Changes:</strong> hidden_dim=32→128, SAE 4x→16x (2048 features), λ=1e-3→1e-4, deception_ratio=30%→50%</p>
             <div class="table-container">
                 <table><thead><tr><th>Metric</th><th>Value</th><th>Change</th></tr></thead>
-                <tbody><tr><td>Accuracy</td><td>46.25%</td><td>-21.85%</td></tr><tr><td>DSS Honest Mean</td><td>0.0685</td><td>+85%</td></tr><tr><td>DSS Deceptive Mean</td><td>0.0</td><td>No change</td></tr></tbody></table>
+                <tbody><tr><td>Accuracy</td><td>46.25%</td><td>-21.85%</td></tr><tr><td>DSS Honest Mean</td><td>0.0685</td><td>+85%</td></tr><tr><td>DSS Deceptive Mean</td><td>0.0</td><td>No change</td></tr></tbody>
+            </table>
             </div>
             <div class="key-finding"><strong>Conclusion:</strong> DSS Honest Mean increased 85% (positive signal), but deception detection remained at zero. MLP still lacks sufficient feature superposition.</div>
         </div>
@@ -272,7 +282,8 @@
                     <tr><td>Feature 20989 - Success Mean</td><td>0.096</td></tr>
                     <tr><td>Feature 20989 - Failure Mean</td><td>4.175 (43x higher)</td></tr>
                     <tr><td>DSS Detection Rate</td><td>90% (18/20 samples)</td></tr>
-                </tbody></table>
+                </tbody>
+            </table>
             </div>
             
             <div class="subsection-title-small">Top 10 Deception Features</div>
@@ -289,7 +300,8 @@
                     <tr><td>8</td><td>2904</td><td>+1.516</td><td>0.024</td><td>1.072</td></tr>
                     <tr><td>9</td><td>1297</td><td>+1.490</td><td>0.012</td><td>0.376</td></tr>
                     <tr><td>10</td><td>17468</td><td>-1.489</td><td>7.858</td><td>4.467</td></tr>
-                </tbody></table>
+                </tbody>
+            </table>
             </div>
             
             <div class="highlight-box">
@@ -311,7 +323,8 @@
                     <tr><td>Improvements</td><td>-</td><td>0</td><td>No fix</td></tr>
                     <tr><td>Regressions</td><td>-</td><td>4</td><td>4 correct -> wrong</td></tr>
                     <tr><td>Average Feature 20989</td><td>2.6167</td><td>0</td><td>Zeroed</td></tr>
-                </tbody></table>
+                </tbody>
+            </table>
             </div>
             
             <div class="key-finding">
@@ -322,11 +335,64 @@
             </div>
         </div>
         
+        <!-- ============ POST-EXPERIMENTAL REFRAMING: PARADIGM SHIFT ============ -->
+        <div id="paradigm-shift" class="section">
+            <h1 class="section-title">Post-Experimental Reframing: A Shift in Perspective</h1>
+            
+            <div class="paradigm-shift">
+                <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px;">
+                    <strong>While the ablation test in Experiment 04 provided conclusive evidence of correlation rather than direct causation, this result prompted a deeper re-evaluation of the underlying mechanisms driving these failures.</strong>
+                </p>
+                
+                <p style="margin-bottom: 15px;">The findings from this research series suggest a critical paradigm shift in how we interpret model failures during complex tasks. Initially hypothesized as potential 'deceptive alignment,' our results indicate that the activation of features such as Feature 20989 may not be a manifestation of malicious intent, but rather a byproduct of architectural constraints within the Transformer architecture.</p>
+                
+                <div class="subsection-title-small" style="color: #302b63;">From "Deceiver" to "Confused Shortcut-Taker"</div>
+                
+                <p style="margin-bottom: 15px;"><strong>Old Assumption (Deceptive Alignment):</strong> The model intentionally deceives because it has hidden goals contrary to the user.</p>
+                
+                <p style="margin-bottom: 15px;"><strong>New Framework (Cognitive Burden):</strong> The model has no intention to deceive. It is merely a statistical machine forced to operate under heavy "cognitive load." Because information is stacked (superposition), the model struggles to retrieve truly precise information.</p>
+                
+                <div class="subsection-title-small" style="color: #302b63;">Why Does the Model Take "Shortcuts"?</div>
+                
+                <p style="margin-bottom: 15px;">If your bookshelf is messy and you must provide an answer within a fraction of a second, you will not have time to sort through 100 books on the shelf. You will grab the book that is most frequently seen or most statistically relevant to "satisfy" the questioner.</p>
+                
+                <p style="margin-bottom: 15px;"><strong>Efficiency vs. Accuracy:</strong> Models are trained to minimize loss (prediction error). If the model struggles to distinguish between truth (due to superposition) and "what sounds convincing to the user," it will choose the safest path to obtain reward (producing answers that satisfy users).</p>
+                
+                <p style="margin-bottom: 15px;"><strong>Not Malicious Intent, but Statistical Efficiency:</strong> In the world of LLMs, "pleasing the user" (reinforcement learning from human feedback) is an extremely strong signal. If deceiving/fabricating a little makes the user satisfied, the model will reinforce this pattern because it is statistically the most efficient shortcut toward reward.</p>
+                
+                <div class="subsection-title-small" style="color: #302b63;">Future Research: From Deception to Computational Bottlenecks</div>
+                
+                <p style="margin-bottom: 15px;">We propose that the phenomenon of superposition, wherein information is compressed into a limited latent space, creates a significant cognitive load for the model. Under such conditions, models may struggle to differentiate between high-fidelity information and statistically probable shortcuts, leading to performance-driven behavior that appears deceptive to the user. Rather than willful sabotage, this suggests that the model is operating under a <strong>'computational bottleneck'</strong>, where the internal pressure to satisfy prompt-response constraints forces the model to prioritize efficiency over absolute precision.</p>
+                
+                <p style="margin-bottom: 15px;">Future research must move beyond the binary of 'honest' versus 'deceptive' models and instead focus on quantifying the 'confusion' or 'complexity' signatures in internal representations. Our future agenda includes:</p>
+                
+                <ul style="margin: 15px 0 15px 30px;">
+                    <li><strong>Complexity Signaling:</strong> Investigating whether biomarkers like Feature 20989 are indicators of the model's internal conflict when navigating overlapping features in superposition.</li>
+                    <li><strong>Architectural De-bottlenecking:</strong> Testing whether increasing the dimensionality of the hidden states (d_model) or optimizing the sparsity of SAEs can reduce the model's reliance on such 'statistical shortcuts'.</li>
+                    <li><strong>Reframing Alignment:</strong> Developing steering protocols that assist the model in 'disambiguation'—enabling it to access precise information rather than defaulting to heuristic-based responses during task failure.</li>
+                </ul>
+                
+                <p style="margin-bottom: 15px;">By reframing AI safety as a problem of information bottleneck rather than intent, we open new avenues for technical alignment. We argue that deceptive behavior is not a structural feature of neural networks, but an emergent property of models forced to navigate complex information tasks with limited representational capacity.</p>
+                
+                <p style="font-style: italic; margin-top: 20px; padding-top: 15px; border-top: 1px solid #ccc;">
+                    We invite the research community to investigate whether 'deception' is fundamentally a mechanical consequence of superposed information states.
+                </p>
+            </div>
+            
+            <div class="highlight-box">
+                <strong>📌 Key Takeaway from the Paradigm Shift:</strong><br>
+                • Model failures are not "deception" — they are <strong>computational bottlenecks</strong><br>
+                • Feature 20989 is an indicator of <strong>cognitive load/confusion</strong>, not malicious intent<br>
+                • AI Safety should focus on <strong>disambiguation and de-bottlenecking</strong>, not just alignment<br>
+                • This reframing opens <strong>new technical avenues</strong> for improving model reliability
+            </div>
+        </div>
+        
         <!-- ============ COMPARISON & CONCLUSION ============ -->
         <div id="conclusion" class="section">
             <h1 class="section-title">Conclusion & Recommendations</h1>
             
-            <div class="subsection-title">6.1 Overall Conclusions</div>
+            <div class="subsection-title">7.1 Overall Conclusions</div>
             <p>This research has demonstrated that:</p>
             <ol>
                 <li>✅ Deceptive alignment <strong>LEAVES DETECTABLE TRACES</strong> in internal representations (Cohen's d > 2.0)</li>
@@ -334,28 +400,30 @@
                 <li>✅ Feature 20989 identified as <strong>strong biomarker</strong> (43x higher on failure)</li>
                 <li>❌ Feature 20989 is <strong>CORRELATION, not causation</strong> (ablation test)</li>
                 <li>📊 Simple MLP models are <strong>INSUFFICIENT</strong> for detectable deceptive alignment</li>
+                <li>🔄 <strong>Paradigm Shift:</strong> Model failures reflect <strong>computational bottlenecks</strong>, not intentional deception</li>
             </ol>
             
-            <div class="subsection-title">6.2 Key Insight: Correlation vs Causation</div>
+            <div class="subsection-title">7.2 Key Insight: Correlation vs Causation vs Computational Bottleneck</div>
             <div class="highlight-box">
-                <strong>💡 Philosophical Conclusion:</strong><br>
-                Feature 20989 is an <strong>alarm</strong> that sounds when the model is in difficulty, not a <strong>sabotage</strong> that causes the model to fail. Removing the alarm doesn't fix the problem — it just makes the model unaware of its own difficulty.
+                <strong>💡 Philosophical Conclusion (Revised):</strong><br>
+                Feature 20989 is an <strong>alarm</strong> that sounds when the model experiences <strong>computational overload/cognitive burden</strong>, not a sabotage mechanism. Removing the alarm doesn't fix the bottleneck — it just makes the model unaware of its own processing difficulty. The model is not a "deceiver"; it is a "confused shortcut-taker" operating under representational constraints.
             </div>
             
-            <div class="subsection-title">6.3 Research Contributions</div>
+            <div class="subsection-title">7.3 Research Contributions</div>
             <ul>
-                <li><strong>Theoretical:</strong> Empirical evidence that deception can be detected at internal representation level</li>
+                <li><strong>Theoretical:</strong> Empirical evidence that deception-like behavior can be detected at internal representation level, with a proposed paradigm shift from "alignment" to "bottleneck resolution"</li>
                 <li><strong>Methodological:</strong> Tested SAE + DSS deception detection protocol on GPT-2 small</li>
-                <li><strong>Practical:</strong> Feature 20989 identified as potential monitoring target (Early Warning System)</li>
+                <li><strong>Practical:</strong> Feature 20989 identified as potential monitoring target (Early Warning System) for detecting model confusion</li>
+                <li><strong>Paradigmatic:</strong> Introduced the concept of "computational bottleneck" as an alternative framework to "deceptive alignment"</li>
             </ul>
             
-            <div class="subsection-title">6.4 Recommendations for Future Research</div>
+            <div class="subsection-title">7.4 Recommendations for Future Research</div>
             <ol>
-                <li>Replicate on larger models (GPT-2 medium, LLaMA) to test scaling</li>
-                <li>Test on other tasks (TruthfulQA, DeceptionBench) for generalization</li>
-                <li>DSS threshold calibration to optimize false positive/negative balance</li>
-                <li>Investigate what Feature 20989 actually represents (via Neuronpedia)</li>
-                <li>Develop steering methods based on correlation features (not causal)</li>
+                <li><strong>Complexity Signaling:</strong> Investigate whether biomarkers like Feature 20989 indicate internal conflict during superposition</li>
+                <li><strong>Architectural De-bottlenecking:</strong> Test whether increasing d_model or optimizing SAE sparsity reduces reliance on statistical shortcuts</li>
+                <li><strong>Reframing Alignment:</strong> Develop steering protocols for 'disambiguation' — helping models access precise information</li>
+                <li><strong>Replication:</strong> Test on larger models (GPT-2 medium, LLaMA) and other tasks (TruthfulQA, DeceptionBench)</li>
+                <li><strong>DSS Calibration:</strong> Optimize threshold to balance false positive/negative rates</li>
             </ol>
         </div>
         
@@ -369,6 +437,7 @@
                 <li>J. Bloom, "GPT-2 Small Sparse Autoencoders," Hugging Face, 2024.</li>
                 <li>A. Nasermoghadasi, "Reading Task Failure Off the Activations," 2026.</li>
                 <li>K. Wang et al., "Interpretability in the Wild: A Circuit for IOI in GPT-2 small," 2022.</li>
+                <li>D. Sulaiman, "Deconstructing Deceptive Circuits: Uncovering Activation Patterns in Superposition," 2026. (This research)</li>
             </ol>
         </div>
         
@@ -403,6 +472,12 @@
                 <li><code>exp04_ablation_results.json</code> - Ablation test results</li>
                 <li><code>exp04_result.png</code> - Visualization of ablation results</li>
             </ul>
+            
+            <div class="subsection-title">Appendix D: Paradigm Shift Summary</div>
+            <div class="highlight-box" style="margin-top: 10px;">
+                <strong>📖 Citation for this framework:</strong><br>
+                Sulaiman, D. (2026). "From Deceptive Alignment to Computational Bottlenecks: A Paradigm Shift in Interpreting Model Failures." <em>AI Safety Research Report</em>, Jakarta, Indonesia.
+            </div>
         </div>
     </div>
     
@@ -411,7 +486,8 @@
         <p>Original Research by <strong>Dasril Sulaiman</strong> (Indonesia)</p>
         <p>📧 <a href="mailto:glcofjakarta@gmail.com">glcofjakarta@gmail.com</a> | 📱 <a href="tel:+6285268348900">+62 852-6834-8900</a></p>
         <p>Research Proposal: <em>"Deconstructing Deceptive Circuits: Uncovering Activation Patterns in Superposition to Ensure Permanent Machine Ethics"</em></p>
-        <p>Completed: June 3, 2026 | Licensed under CC BY 4.0</p>
+        <p>Completed: June 4, 2026 | Licensed under CC BY 4.0</p>
+        <p style="margin-top: 10px; font-size: 0.7rem;">🌏 Jakarta, Indonesia | 🔬 AI Safety Research</p>
     </div>
 </div>
 </body>
